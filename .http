@@ -1,0 +1,23 @@
+### 1. Suche nach einem Wort im Titel
+GET https://arielchess-magnetriviera-5002.codio.io/api/posts/search?title=Neuer
+
+### 2. Suche nach einem Wort im Inhalt
+GET https://arielchess-magnetriviera-5002.codio.io/api/posts/search?content=Schritt
+
+### 3. Kombinierte Suche (falls dein Code das unterstützt)
+GET https://arielchess-magnetriviera-5002.codio.io/api/posts/search?title=Post&content=Inhalt
+
+
+### Post 2 aktualisieren (Titel ändern)
+PUT https://arielchess-magnetriviera-5002.codio.io/api/posts/2
+Content-Type: application/json
+
+{
+    "title": "Mein aktualisierter zweiter Post"
+}
+
+### 1. Alphabetisch absteigend sortieren (Z -> A)
+GET https://arielchess-magnetriviera-5002.codio.io/api/posts?sort=title&direction=desc
+
+### 2. Alphabetisch aufsteigend sortieren (A -> Z)
+GET https://arielchess-magnetriviera-5002.codio.io/api/posts?sort=title&direction=asc
